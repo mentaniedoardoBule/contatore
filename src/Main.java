@@ -32,8 +32,5 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("Final count: " + c1.getCount());
-        System.out.println("Final count: " + c2.getCount());
-
     }
 }

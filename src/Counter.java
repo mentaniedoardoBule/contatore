@@ -1,10 +1,14 @@
 public class Counter {
     private int count = 0;
 
-    public synchronized void increment() {
-        count++;
+    public void increment() {
+        int i=0;
+        while (i<5000) {
+            i++;
+            count++;
+        }
+        System.out.println("count: " + count);
     }
-
     public int getCount() {
         return count;
     }
